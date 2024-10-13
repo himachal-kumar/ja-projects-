@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: linear-gradient(145deg, #fff, #f0f0f0);
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.search-box input {
+    width: 100%;
+    font-size: 18px;
+    color: #333;
+    background-color: #e6f5fb;
+    padding: 14px 18px;
+    border-radius: 12px;
+    border: 2px solid #e0e0e0;
+    transition: border-color 0.3s ease;
+}
+
+.search-box input:focus {
+    border-color: #00aaff;
+}
+
+.search-box input::placeholder {
+    color: #666;
+}
+
+.search-btn {
+    background-color: #00aaff;
+    color: white;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+}
+
+.search-btn:hover {
+    background-color: #0088cc;
+}
+
+.weather-body {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.weather-body img {
+    width: 60%;
+    margin-bottom: 16px;
+}
+
+.weather-box {
+    text-align: center;
+}
+
+.weather-box .temperature {
+    font-size: 48px;
+    font-weight: 900;
+    position: relative;
+    color: #ff7b00;
+}
+
+.weather-box .temperature sup {
+    font-size: 22px;
+    position: absolute;
+    top: -10px;
+}
+
+.weather-box .description {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 8px;
+    color: #555;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.weather-details .humidity, .weather-details .wind {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.weather-details i {
+    font-size: 36px;
+    color: #ff7b00;
+}
+
+.weather-details .text {
+    font-size: 18px;
+    color: #333;
+}
+
+.location-not-found {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.location-not-found h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #888;
+}
+
+.location-not-found img {
+    width: 75%;
+    filter: grayscale(50%);
+}
